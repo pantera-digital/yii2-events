@@ -43,7 +43,7 @@ class SystemEvent extends \yii\db\ActiveRecord
         return $model;
     }
 
-    public function findModel()
+    public function getModel()
     {
         $model = Yii::createObject($this->model);
         $model = $model::findOne($this->model_id);
